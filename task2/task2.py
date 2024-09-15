@@ -15,7 +15,7 @@ def fun(cir_pos, dot_pos):
 
 while True:
     try:
-        with open(input()) as f_1, open(input()) as f_2:
+        with open(input('Enter path(file#1): ')) as f_1, open(input('Enter path(file#2): ')) as f_2:
             fun(f_1, f_2)
     except IOError as e:
         print('Operation failed: %s' % e.strerror)
